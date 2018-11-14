@@ -11,7 +11,8 @@ import os.log
 
 class ViewController: UIViewController {
 
-    
+    @IBOutlet weak var mySwitch: UISwitch!
+    @IBOutlet weak var mySlider: UISlider!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,6 +23,12 @@ class ViewController: UIViewController {
     @IBAction func myButtonWasTapped(_ sender: Any) {
         os_log("ViewController. myButtonWasTapped()", log: OSLog.default, type: .info)
         print(sender)
+        if mySwitch.isOn {
+            print("Switch: ON")
+        } else {
+            print("Switch: OFF")
+        }
+        print("Slider Value: \(mySlider.value)")
     }
     
     @IBAction func mySwitchWasToggled(_ sender: UISwitch) {
@@ -44,8 +51,11 @@ class ViewController: UIViewController {
         if let text = sender.text { print(text) }
     }
     
-    
-    
+    @IBAction func myRespondToTapGesture(_ sender: UITapGestureRecognizer) {
+        os_log("ViewController. textFieldReturnKeyTapped()", log: OSLog.default, type: .info)
+        let location = sender.location(in: view)
+        print(location)
+    }
     
 } // END class ViewController
 

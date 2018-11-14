@@ -52,10 +52,23 @@
                             </textField>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <gestureRecognizers/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="G7G-pV-reX" appends="YES" id="p1F-Du-hmN"/>
+                        </connections>
                     </view>
+                    <connections>
+                        <outlet property="mySlider" destination="tCG-og-Pov" id="7z4-bM-HO8"/>
+                        <outlet property="mySwitch" destination="eID-8L-rd2" id="Tis-nU-cMO"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="G7G-pV-reX">
+                    <connections>
+                        <action selector="myRespondToTapGesture:" destination="BYZ-38-t0r" id="Ggt-zd-S1B"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
         </scene>
     </scenes>
