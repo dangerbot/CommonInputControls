@@ -124,7 +124,7 @@
         <!--Yellow-->
         <scene sceneID="nr3-Jg-pu0">
             <objects>
-                <viewController id="mjE-om-49w" sceneMemberID="viewController">
+                <viewController id="mjE-om-49w" customClass="YellowViewController" customModule="CommonInputControls" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="goh-qb-CHz">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -184,7 +184,7 @@
         <!--Grey-->
         <scene sceneID="jXo-hK-OWQ">
             <objects>
-                <viewController id="8KO-pz-mnH" sceneMemberID="viewController">
+                <viewController id="8KO-pz-mnH" customClass="GreyViewController" customModule="CommonInputControls" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="CzC-CD-0ce">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
