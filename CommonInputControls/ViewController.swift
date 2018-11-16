@@ -19,6 +19,11 @@ class ViewController: UIViewController {
         os_log("ViewController. viewDidLoad()", log: OSLog.default, type: .info)
         // Do any additional setup after loading the view, typically from a nib.
     }
+    
+    @IBAction func unwindToRed(unwindSegue: UIStoryboardSegue) {
+        os_log("ViewController. unwindToRed(...)", log: OSLog.default, type: .info)
+
+    }
 
     @IBAction func myButtonWasTapped(_ sender: Any) {
         os_log("ViewController. myButtonWasTapped()", log: OSLog.default, type: .info)
