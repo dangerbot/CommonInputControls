@@ -18,7 +18,8 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         os_log("OrangeViewController. viewDidLoad()", log: OSLog.default, type: .info)
-        // Do any additional setup after loading the view, typically from a nib.
+        // Setting a badge in the tab bar navigator:
+        tabBarItem.badgeValue = "!" // remove with = nil
     }
     
     @IBAction func unwindToRed(unwindSegue: UIStoryboardSegue) {

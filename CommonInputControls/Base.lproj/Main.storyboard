@@ -43,7 +43,7 @@
                                         </connections>
                                     </switch>
                                     <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="tCG-og-Pov">
-                                        <rect key="frame" x="32.5" y="133" width="270" height="31"/>
+                                        <rect key="frame" x="18.5" y="133" width="298" height="31"/>
                                         <connections>
                                             <action selector="mySliderValueChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="5hm-mP-64T"/>
                                         </connections>
@@ -102,7 +102,7 @@
                             <outletCollection property="gestureRecognizers" destination="G7G-pV-reX" appends="YES" id="p1F-Du-hmN"/>
                         </connections>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="lgX-ds-N4m"/>
+                    <tabBarItem key="tabBarItem" title="Orange" image="R" id="lgX-ds-N4m"/>
                     <navigationItem key="navigationItem" title="Orange" id="SNG-ds-Hk0"/>
                     <connections>
                         <outlet property="frontTextField" destination="KeA-n0-Gei" id="IcX-5X-fWi"/>
@@ -121,7 +121,7 @@
             </objects>
             <point key="canvasLocation" x="2068" y="132.68365817091455"/>
         </scene>
-        <!--Item-->
+        <!--Yellow-->
         <scene sceneID="nr3-Jg-pu0">
             <objects>
                 <viewController id="mjE-om-49w" sceneMemberID="viewController">
@@ -131,7 +131,7 @@
                         <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="ld4-sG-Vm9"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="EmM-nc-75l"/>
+                    <tabBarItem key="tabBarItem" title="Yellow" image="O" badgeValue="!" id="EmM-nc-75l"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="If7-GR-GLA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -256,6 +256,10 @@
             <point key="canvasLocation" x="1128.8" y="132.68365817091455"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="O" width="28" height="28"/>
+        <image name="R" width="28" height="28"/>
+    </resources>
     <inferredMetricsTieBreakers>
         <segue reference="6I5-ba-4tk"/>
         <segue reference="BDV-ma-Mgx"/>
