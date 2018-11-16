@@ -13,7 +13,7 @@
         <!--Orange-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CommonInputControls" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="OrangeViewController" customModule="CommonInputControls" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -43,7 +43,7 @@
                                         </connections>
                                     </switch>
                                     <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="tCG-og-Pov">
-                                        <rect key="frame" x="18.5" y="133" width="298" height="31"/>
+                                        <rect key="frame" x="16.5" y="133" width="302" height="31"/>
                                         <connections>
                                             <action selector="mySliderValueChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="5hm-mP-64T"/>
                                         </connections>

@@ -9,7 +9,7 @@
 import UIKit
 import os.log
 
-class ViewController: UIViewController {
+class OrangeViewController: UIViewController {
 
     @IBOutlet weak var mySwitch: UISwitch!
     @IBOutlet weak var mySlider: UISlider!
