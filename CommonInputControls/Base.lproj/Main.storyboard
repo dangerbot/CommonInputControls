@@ -19,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="tvI-h7-f8b">
-                                <rect key="frame" x="20" y="233" width="335" height="201"/>
+                                <rect key="frame" x="20" y="212.5" width="335" height="242"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Lg-dO-Ksy">
                                         <rect key="frame" x="80" y="0.0" width="175" height="48"/>
@@ -43,7 +43,7 @@
                                         </connections>
                                     </switch>
                                     <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="tCG-og-Pov">
-                                        <rect key="frame" x="72.5" y="133" width="190" height="31"/>
+                                        <rect key="frame" x="34.5" y="133" width="266" height="31"/>
                                         <connections>
                                             <action selector="mySliderValueChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="5hm-mP-64T"/>
                                         </connections>
@@ -57,12 +57,35 @@
                                             <action selector="textFieldReturnKeyTapped:" destination="BYZ-38-t0r" eventType="primaryActionTriggered" id="1pg-My-rms"/>
                                         </connections>
                                     </textField>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="yby-FY-6xN">
+                                        <rect key="frame" x="0.0" y="209" width="335" height="33"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4eA-OJ-NMk">
+                                                <rect key="frame" x="0.0" y="0.0" width="163.5" height="33"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                                <state key="normal" title="Push to Pink"/>
+                                                <connections>
+                                                    <action selector="pinkButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="G7f-kD-ggd"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="snf-Rf-Kja">
+                                                <rect key="frame" x="171.5" y="0.0" width="163.5" height="33"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                                <state key="normal" title="Push to Grey"/>
+                                                <connections>
+                                                    <action selector="greyButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ejl-b8-FqQ"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="KeA-n0-Gei" firstAttribute="leading" secondItem="tvI-h7-f8b" secondAttribute="leading" constant="5" id="Ffm-VM-ag5"/>
                                     <constraint firstAttribute="trailing" secondItem="KeA-n0-Gei" secondAttribute="trailing" constant="5" id="HgO-46-i6e"/>
                                     <constraint firstItem="ZKI-VQ-LX1" firstAttribute="leading" secondItem="tvI-h7-f8b" secondAttribute="leading" constant="5" id="R8w-hb-txT"/>
                                     <constraint firstAttribute="trailing" secondItem="ZKI-VQ-LX1" secondAttribute="trailing" constant="5" id="Tt0-ny-IEG"/>
+                                    <constraint firstItem="yby-FY-6xN" firstAttribute="leading" secondItem="tvI-h7-f8b" secondAttribute="leading" id="p2d-Mg-SrT"/>
+                                    <constraint firstAttribute="trailing" secondItem="yby-FY-6xN" secondAttribute="trailing" id="rqc-Pq-N6I"/>
                                 </constraints>
                             </stackView>
                         </subviews>
@@ -84,6 +107,8 @@
                         <outlet property="frontTextField" destination="KeA-n0-Gei" id="IcX-5X-fWi"/>
                         <outlet property="mySlider" destination="tCG-og-Pov" id="7z4-bM-HO8"/>
                         <outlet property="mySwitch" destination="eID-8L-rd2" id="Tis-nU-cMO"/>
+                        <segue destination="0ne-5J-STf" kind="show" identifier="PinkSegue" id="BDV-ma-Mgx"/>
+                        <segue destination="8KO-pz-mnH" kind="show" identifier="GreySegue" id="6I5-ba-4tk"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -195,4 +220,8 @@
             <point key="canvasLocation" x="351" y="133"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="6I5-ba-4tk"/>
+        <segue reference="BDV-ma-Mgx"/>
+    </inferredMetricsTieBreakers>
 </document>
