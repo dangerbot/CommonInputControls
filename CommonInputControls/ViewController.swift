@@ -13,6 +13,7 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var mySwitch: UISwitch!
     @IBOutlet weak var mySlider: UISlider!
+    @IBOutlet weak var frontTextField: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,7 +23,6 @@ class ViewController: UIViewController {
     
     @IBAction func unwindToRed(unwindSegue: UIStoryboardSegue) {
         os_log("ViewController. unwindToRed(...)", log: OSLog.default, type: .info)
-
     }
 
     @IBAction func myButtonWasTapped(_ sender: Any) {
@@ -61,6 +61,13 @@ class ViewController: UIViewController {
         let location = sender.location(in: view)
         print(location)
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        os_log("ViewController. prepare(UIStoryboardSegue)", log: OSLog.default, type: .info)
+        segue.destination.navigationItem.title = frontTextField.text
+        // segue.destination.pinkLabelText
+    }
+    
     
 } // END class ViewController
 

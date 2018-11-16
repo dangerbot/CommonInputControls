@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7E67AC54219E692400C58C72 /* PinkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E67AC53219E692400C58C72 /* PinkViewController.swift */; };
 		7EC3F0A1219A85EB00083A64 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EC3F0A0219A85EB00083A64 /* AppDelegate.swift */; };
 		7EC3F0A3219A85EB00083A64 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EC3F0A2219A85EB00083A64 /* ViewController.swift */; };
 		7EC3F0A6219A85EB00083A64 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7EC3F0A4219A85EB00083A64 /* Main.storyboard */; };
@@ -35,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7E67AC53219E692400C58C72 /* PinkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinkViewController.swift; sourceTree = "<group>"; };
 		7EC3F09D219A85EB00083A64 /* CommonInputControls.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CommonInputControls.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7EC3F0A0219A85EB00083A64 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7EC3F0A2219A85EB00083A64 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -101,6 +103,7 @@
 			children = (
 				7EC3F0A0219A85EB00083A64 /* AppDelegate.swift */,
 				7EC3F0A2219A85EB00083A64 /* ViewController.swift */,
+				7E67AC53219E692400C58C72 /* PinkViewController.swift */,
 				7EC3F0A4219A85EB00083A64 /* Main.storyboard */,
 				7EC3F0AA219A85ED00083A64 /* Assets.xcassets */,
 				7EC3F0AC219A85ED00083A64 /* LaunchScreen.storyboard */,
@@ -259,6 +262,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7E67AC54219E692400C58C72 /* PinkViewController.swift in Sources */,
 				7EC3F0A3219A85EB00083A64 /* ViewController.swift in Sources */,
 				7EC3F0A1219A85EB00083A64 /* AppDelegate.swift in Sources */,
 				7EC3F0A9219A85EB00083A64 /* CommonInputControls.xcdatamodeld in Sources */,

@@ -81,6 +81,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="Orange" id="SNG-ds-Hk0"/>
                     <connections>
+                        <outlet property="frontTextField" destination="KeA-n0-Gei" id="IcX-5X-fWi"/>
                         <outlet property="mySlider" destination="tCG-og-Pov" id="7z4-bM-HO8"/>
                         <outlet property="mySwitch" destination="eID-8L-rd2" id="Tis-nU-cMO"/>
                     </connections>
@@ -97,28 +98,42 @@
         <!--Pink-->
         <scene sceneID="pFD-sH-srD">
             <objects>
-                <viewController id="0ne-5J-STf" sceneMemberID="viewController">
+                <viewController id="0ne-5J-STf" customClass="PinkViewController" customModule="CommonInputControls" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="OKY-13-k4c">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="69K-qR-cLd">
-                                <rect key="frame" x="47.5" y="309.5" width="280" height="48"/>
-                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
-                                <state key="normal" title="Second Segue Button"/>
-                                <connections>
-                                    <segue destination="8KO-pz-mnH" kind="show" id="1VE-U7-uRf"/>
-                                </connections>
-                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="21" translatesAutoresizingMaskIntoConstraints="NO" id="zEj-wt-UAH">
+                                <rect key="frame" x="47.5" y="289" width="280" height="89.5"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="69K-qR-cLd">
+                                        <rect key="frame" x="0.0" y="0.0" width="280" height="48"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                        <state key="normal" title="Second Segue Button"/>
+                                        <connections>
+                                            <segue destination="8KO-pz-mnH" kind="show" id="1VE-U7-uRf"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Segue Text Goes Here" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sc3-8Y-Yfm">
+                                        <rect key="frame" x="55" y="69" width="170.5" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.48835774999999998" blue="0.79080128240000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
-                            <constraint firstItem="69K-qR-cLd" firstAttribute="centerY" secondItem="OKY-13-k4c" secondAttribute="centerY" id="5az-0H-L21"/>
-                            <constraint firstItem="69K-qR-cLd" firstAttribute="centerX" secondItem="OKY-13-k4c" secondAttribute="centerX" id="eZe-jN-LVQ"/>
+                            <constraint firstItem="zEj-wt-UAH" firstAttribute="centerX" secondItem="OKY-13-k4c" secondAttribute="centerX" id="9ZR-mp-qht"/>
+                            <constraint firstItem="zEj-wt-UAH" firstAttribute="centerY" secondItem="OKY-13-k4c" secondAttribute="centerY" id="qUg-jB-13u"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Sei-Dm-98t"/>
                     </view>
                     <navigationItem key="navigationItem" title="Pink" id="h5f-hI-08K"/>
+                    <connections>
+                        <outlet property="pinkLabelText" destination="Sc3-8Y-Yfm" id="HSH-Cf-Bq7"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qJG-HT-h4Q" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
