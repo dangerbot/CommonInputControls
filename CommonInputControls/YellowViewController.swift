@@ -27,5 +27,24 @@ class YellowViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    
+    
+    // MARK: Lifecycle stuff
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        os_log("YellowViewController. viewWillAppear(...)", log: OSLog.default, type: .info)
+    }
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        os_log("YellowViewController. viewDidAppear(...)", log: OSLog.default, type: .info)
+    }
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        os_log("YellowViewController. viewWillDisappear(...)", log: OSLog.default, type: .info)
+    }
+    override func viewDidDisappear(_ animated: Bool) {
+        super.viewDidDisappear(animated)
+        os_log("YellowViewController. viewDidDisappear(...)", log: OSLog.default, type: .info)
+    }
 
 }
