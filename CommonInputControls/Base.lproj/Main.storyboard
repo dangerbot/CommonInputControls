@@ -490,7 +490,37 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="If7-GR-GLA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2068" y="907.1964017991005"/>
+            <point key="canvasLocation" x="2068" y="1052"/>
+        </scene>
+        <!--The Table-->
+        <scene sceneID="qOX-8A-yiV">
+            <objects>
+                <tableViewController id="lW8-Oy-TNA" customClass="EmojiTableTableViewController" customModule="CommonInputControls" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="kVx-RS-v4N">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="l7i-K2-JpN">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="l7i-K2-JpN" id="w9F-WP-Ch8">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="lW8-Oy-TNA" id="omn-80-0TW"/>
+                            <outlet property="delegate" destination="lW8-Oy-TNA" id="0wa-UC-VMj"/>
+                        </connections>
+                    </tableView>
+                    <tabBarItem key="tabBarItem" title="The Table" image="B" id="Kwv-ts-Amj"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dro-bg-EJY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2842" y="1051"/>
         </scene>
         <!--Pink-->
         <scene sceneID="pFD-sH-srD">
@@ -605,6 +635,7 @@
                     <connections>
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="OLe-At-KdL"/>
                         <segue destination="mjE-om-49w" kind="relationship" relationship="viewControllers" id="uWm-74-nWM"/>
+                        <segue destination="lW8-Oy-TNA" kind="relationship" relationship="viewControllers" id="p8t-id-lZv"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jT4-6G-lzX" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -613,6 +644,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="B" width="28" height="28"/>
         <image name="O" width="28" height="28"/>
         <image name="R" width="28" height="28"/>
     </resources>
