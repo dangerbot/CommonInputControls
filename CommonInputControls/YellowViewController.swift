@@ -33,6 +33,10 @@ class YellowViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         os_log("YellowViewController. viewWillAppear(...)", log: OSLog.default, type: .info)
+        // A way to anchor an image view to be centered when inside a scroll view:
+        // imageView.centerXAnchor.constraints(equalTo: scrollView.contentLayoutGuide.centerXAnchor)
+        // imageView.centerYAnchor.constraints(equalTo: scrollView.contentLayoutGuide.centerXAnchor)
+
     }
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
