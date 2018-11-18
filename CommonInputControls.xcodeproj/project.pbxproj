@@ -18,6 +18,7 @@
 		7EC3F0C4219A85ED00083A64 /* CommonInputControlsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EC3F0C3219A85ED00083A64 /* CommonInputControlsUITests.swift */; };
 		7EED43CF219E82EE00F4788D /* YellowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EED43CE219E82EE00F4788D /* YellowViewController.swift */; };
 		7EED43D1219E836400F4788D /* GreyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EED43D0219E836400F4788D /* GreyViewController.swift */; };
+		7EEFF63921A1E1350074CA3C /* Emoji.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EEFF63821A1E1350074CA3C /* Emoji.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		7EC3F0C5219A85ED00083A64 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7EED43CE219E82EE00F4788D /* YellowViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YellowViewController.swift; sourceTree = "<group>"; };
 		7EED43D0219E836400F4788D /* GreyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreyViewController.swift; sourceTree = "<group>"; };
+		7EEFF63821A1E1350074CA3C /* Emoji.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Emoji.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +117,7 @@
 				7EC3F0AC219A85ED00083A64 /* LaunchScreen.storyboard */,
 				7EC3F0AF219A85ED00083A64 /* Info.plist */,
 				7EC3F0A7219A85EB00083A64 /* CommonInputControls.xcdatamodeld */,
+				7EEFF63821A1E1350074CA3C /* Emoji.swift */,
 			);
 			path = CommonInputControls;
 			sourceTree = "<group>";
@@ -272,6 +275,7 @@
 				7EC3F0A3219A85EB00083A64 /* OrangeViewController.swift in Sources */,
 				7EC3F0A1219A85EB00083A64 /* AppDelegate.swift in Sources */,
 				7EC3F0A9219A85EB00083A64 /* CommonInputControls.xcdatamodeld in Sources */,
+				7EEFF63921A1E1350074CA3C /* Emoji.swift in Sources */,
 				7EED43CF219E82EE00F4788D /* YellowViewController.swift in Sources */,
 				7EED43D1219E836400F4788D /* GreyViewController.swift in Sources */,
 			);
