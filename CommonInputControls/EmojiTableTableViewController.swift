@@ -68,6 +68,13 @@ class EmojiTableTableViewController: UITableViewController {
         print("indexPath.row = \(indexPath.row), emoji = \(emoji.symbol), name = \(emoji.name)")
         return cell
     }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        os_log("EmojiTableTableViewController. tableView(didSelectRowAt)", log: OSLog.default, type: .info)
+        let emoji = emojis[indexPath.row]
+        print("indexPath.row = \(indexPath.row), emoji = \(emoji.symbol), name = \(emoji.name)")
+    }
+    
 
     /*
     // Override to support conditional editing of the table view.
@@ -77,6 +84,7 @@ class EmojiTableTableViewController: UITableViewController {
     }
     */
 
+    
     /*
     // Override to support editing the table view.
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
