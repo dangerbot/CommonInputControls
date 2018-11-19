@@ -10,7 +10,28 @@ import UIKit
 import os.log
 
 class EmojiTableTableViewController: UITableViewController {
+    
+    // Data:
+    var emojis: [Emoji] = [
+        Emoji(symbol: "😀", name: "Grinning Face", description: "A typical smiley face.", usage: "happiness"),
+        Emoji(symbol: "😕", name: "Confused Face", description: "A confused, puzzled face.", usage: "unsure what to think; displeasure"),
+        Emoji(symbol: "😍", name: "Heart Eyes", description: "A smiley face with hearts for eyes.", usage: "love of something; attractive"),
+        Emoji(symbol: "👮", name: "Police Officer", description: "A police officer wearing a blue cap with a gold badge.", usage: "person of authority"),
+        Emoji(symbol: "🐢", name: "Turtle", description: "A cute turtle.", usage: "Something slow"),
+        Emoji(symbol: "🐘", name: "Elephant", description: "A gray elephant.", usage: "good memory"),
+        Emoji(symbol: "🍝", name: "Spaghetti", description: "A plate of spaghetti.", usage: "spaghetti"),
+        Emoji(symbol: "🎲", name: "Die", description: "A single die.", usage: "taking a risk, chance; game"),
+        Emoji(symbol: "⛺️", name: "Tent", description: "A small tent.", usage: "camping"),
+        Emoji(symbol: "📚", name: "Stack of Books", description: "Three colored books stacked on each other.", usage: "homework, studying"),
+        Emoji(symbol: "💔", name: "Broken Heart", description: "A red, broken heart.", usage: "extreme sadness"),
+        Emoji(symbol: "💤", name: "Snore", description: "Three blue \'z\'s.", usage: "tired, sleepiness"),
+        Emoji(symbol: "🏁", name: "Checkered Flag", description: "A black-and-white checkered flag.", usage: "completion")
+    ]
 
+    
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         os_log("EmojiTableTableViewController. viewDidLoad()", log: OSLog.default, type: .info)
@@ -25,26 +46,28 @@ class EmojiTableTableViewController: UITableViewController {
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
-        os_log("EmojiTableTableViewController. numberOfSections()", log: OSLog.default, type: .info)
-        // #warning Incomplete implementation, return the number of sections
-        return 0
+        os_log("EmojiTableTableViewController. numberOfSections() == 1", log: OSLog.default, type: .info)
+        return 1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         os_log("EmojiTableTableViewController. tableView(numberOfRowsInSection)", log: OSLog.default, type: .info)
-        // #warning Incomplete implementation, return the number of rows
-        return 0
+        print("numberOFRowsInSection = \(emojis.count)")
+        // section 0 is the first section
+        if section == 0 { return emojis.count }
+        else { return 0 }
     }
 
-    /*
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
-
+        os_log("EmojiTableTableViewController. tableView(cellForRowAt)", log: OSLog.default, type: .info)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "EmojiCell", for: indexPath)
         // Configure the cell...
-
+        let emoji = emojis[indexPath.row]
+        cell.textLabel?.text = "\(emoji.symbol) - \(emoji.name)"
+        cell.detailTextLabel?.text = emoji.description
+        print("indexPath.row = \(indexPath.row), emoji = \(emoji.symbol), name = \(emoji.name)")
         return cell
     }
-    */
 
     /*
     // Override to support conditional editing of the table view.
