@@ -81,7 +81,10 @@ class OrangeViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         os_log("OrangeViewController. prepare(UIStoryboardSegue)", log: OSLog.default, type: .info)
         segue.destination.navigationItem.title = frontTextField.text
-        // segue.destination.pinkLabelText
+        if segue.identifier == "PinkSegue" {
+            let pinkViewController : PinkViewController = segue.destination as! PinkViewController
+            pinkViewController.pinkLableTextString = "steve is super cool"
+        }
     }
     
     

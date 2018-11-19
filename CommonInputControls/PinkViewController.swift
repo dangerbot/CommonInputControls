@@ -13,10 +13,13 @@ import os.log
 class PinkViewController: UIViewController {
 
     @IBOutlet weak var pinkLabelText: UILabel!
+    var pinkLableTextString = "steve is cool"
     
     override func viewDidLoad() {
         super.viewDidLoad()
         os_log("PinkViewController. viewDidLoad()", log: OSLog.default, type: .info)
+        // Updating the text from a segue (hard coded string)
+        pinkLabelText.text = pinkLableTextString
     }
     
     /*
